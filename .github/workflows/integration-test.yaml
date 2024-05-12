@@ -37,6 +37,10 @@ jobs:
       - name: Install dependencies
         run: |
           pacman -Syu --noconfirm $(sed -n -e 's/^[[:space:]]*\(make\)\?depends\(_x86_64\)\? = \([[:alnum:][:punct:]]*\)[[:space:]]*$/\3/p' /home/build/${{ matrix.package }}/.SRCINFO)
+      - name: Mako
+        run: |
+          pacman -S --noconfirm python-pip
+          pip install mako --break-system-packages
       - name: Prepare sources
         shell: bash
         run: |
