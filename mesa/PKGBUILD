@@ -17,7 +17,7 @@ pkgname=(
   'mesa-vdpau'
   'mesa'
 )
-_mesaver=24.2.4
+_mesaver=24.2.5
 pkgver=${_mesaver//-/.}.chos1
 pkgrel=1
 epoch=1
@@ -108,7 +108,7 @@ for _crate in "${!_crates[@]}"; do
   source+=($_crate-${_crates[$_crate]}.tar.gz::https://crates.io/api/v1/crates/$_crate/${_crates[$_crate]}/download)
 done
 
-sha256sums=('5ea42a8bb6d58aec9754c9f553b1e413f67c09403741f8e2786c3f9e63d3461a'
+sha256sums=('733d0bea242ed6a5bb5c806fe836792ce7f092d45a2f115b7b7e15897c9dd96f'
             'SKIP'
             '7052ba73bb07ea78873a2431ee4e828f4e72bda7d176d07f770fa48373dec537'
             'f1343e521907006dc482e619dff5b43db616977febd9ba80af8ef7511da5b6b5'
