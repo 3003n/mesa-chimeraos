@@ -469,6 +469,7 @@ package_mesa() {
   _install fakeinstall/$_libdir/dri/*_dri.so
 
   _install fakeinstall/$_libdir/d3d
+  _install fakeinstall/$_libdir/gbm
   _install fakeinstall/$_libdir/lib{gbm,glapi}.so*
   _install fakeinstall/$_libdir/libOSMesa.so*
 
