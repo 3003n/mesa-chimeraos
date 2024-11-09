@@ -151,7 +151,6 @@ build() {
     -D gallium-drivers=radeonsi,nouveau,swrast,i915,iris,crocus,zink
     -D gallium-extra-hud=true
     -D gallium-nine=true
-    -D gallium-omx=disabled
     -D gallium-opencl=icd
     -D gallium-rusticl=true
     -D gallium-xa=disabled
