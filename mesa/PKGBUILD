@@ -17,7 +17,7 @@ pkgname=(
   'mesa-vdpau'
   'mesa'
 )
-_mesaver=24.3.0-rc1
+_mesaver=24.3.0
 pkgver=${_mesaver//-/.}.chos1
 pkgrel=1
 epoch=1
