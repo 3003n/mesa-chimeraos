@@ -19,7 +19,7 @@ jobs:
     container: archlinux:base-devel
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Create build user
         run: |
           useradd -m build
@@ -71,7 +71,7 @@ jobs:
         run: |
           find ${{ env.PKGDEST }}/*.pkg.tar* -type f -name '*:*' -execdir bash -c 'mv "$1" "${1//:/--}"' bash {} \;
       - name: Upload package artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: mesa-chimeraos
           path: |
@@ -86,12 +86,12 @@ jobs:
     needs: [build-mesa]
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: mesa-chimeraos
           path: ${{ env.PKGDEST }}
       - name: Make release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: mesa-chimeraos-${{needs.build-mesa.outputs.full_version}}
           token: ${{ secrets.GITHUB_TOKEN }}
