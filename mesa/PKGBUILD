@@ -15,7 +15,7 @@ pkgname=(
 )
 _mesaver=25.1.0-rc1
 pkgver=${_mesaver//-/.}.chos1
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="Open-source OpenGL drivers"
 url="https://www.mesa3d.org/"
@@ -83,7 +83,6 @@ source=(
   https://mesa.freedesktop.org/archive/mesa-${_mesaver}.tar.xz{,.sig}
   LICENSE
   0001-STEAMOS-Dynamic-swapchain-override-for-gamescope-lim.patch
-  0002-Nouveau-load-zink-as-the-GL-driver.patch
   0003-Xe2-gamescope.patch
 )
 validpgpkeys=(
@@ -112,7 +111,6 @@ sha256sums=('ebd43e93b70ac80c025efd51bb23ea67ed4b46f5c6ce3d5beb312d292093492e'
             'SKIP'
             '7052ba73bb07ea78873a2431ee4e828f4e72bda7d176d07f770fa48373dec537'
             'a34c312c525717275661e095e393ae31a00104b5d9461ff4de21710caaa069f1'
-            '1727a770f7d9c1838718a186545ae84fad05e29be18043f8eec46e475842a790'
             '57d72262fcff8db835cd4a0bee36157097590403f9b4b50caf2d062dc79e7ec4'
             '5e719e8df665df0d1c8fbfd238015744736151d4445ec0836b8e628aae103b77'
             '3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b'
@@ -123,7 +121,6 @@ b2sums=('9bf9fb9e24b1c04343f33d78dac23201ba6fabfc2e0f964fbf7e737b3476527dcfb655d
         'SKIP'
         '1ecf007b82260710a7bf5048f47dd5d600c168824c02c595af654632326536a6527fbe0738670ee7b921dd85a70425108e0f471ba85a8e1ca47d294ad74b4adb'
         '40672a16d4fd1d5154412896cc228e76f35d5323fdf5a2ff07bf3c97cf11a49d0f9e286917667d35fdef8d64ef8aa5583b9ca3a49a8e4b199009084c18f45130'
-        'bfb6a0ef05abedecc5fc550a8de9c57f2909e0307cec963c913c387a9f037aa88acc588ac3279e5869033ffac7949c5867c96f30763d521659d62047cd58d6d8'
         '99fd49aff3671eee74605b481676f7f9b314c3fdcd70340cc9ef687ba96179a18631804de3925479ed0170d8e8b6b656f25ef94b579121c4b132517dcb852dc3'
         '4b89e07f23af8328dbb34fe2b3f1b202f1e6a3885a6269740a23359b41bb4099ac2484565d3b2b0936261689ca525785ac620c766997234fd8d0f409e80e5ea3'
         '4cede03c08758ccd6bf53a0d0057d7542dfdd0c93d342e89f3b90460be85518a9fd24958d8b1da2b5a09b5ddbee8a4263982194158e171c2bba3e394d88d6dac'
