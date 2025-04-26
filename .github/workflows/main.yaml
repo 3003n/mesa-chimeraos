@@ -12,7 +12,7 @@ env:
 
 jobs:
   build-mesa:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       full_version: ${{ steps.set-mesa-version.outputs.full_version }}
 
